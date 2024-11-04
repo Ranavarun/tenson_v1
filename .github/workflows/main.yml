@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          dockerfile: DockerFile
+          dockerfile: Dockerfile
           push: false
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/tenson_v1:today
       - name: Login to Docker Hub
